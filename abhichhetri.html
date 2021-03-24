@@ -1,92 +1,166 @@
-<html>
-  <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="abhichhetri.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>School's Homepage</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+}
+
+.nav {
+background-color: #595959;
+color: #ffffff;
+list-style: none;
+text-align: center;
+padding: 20px 0 20px 0;
+}
+
+.nav > li {
+display: inline-block;
+padding-right: 90px;
+}
+
+.nav > li > a {
+text-decoration: none;
+color: #ffffff;
+}
+
+.nav > li > a:hover {
+color: #c1c1c1;
+}
+
+h1 {
+text-align: center;
+letter-spacing: 7px;
+text-shadow: 1px 1px;
+font-family: cursive;
+}
+
+.grid {
+display: grid;
+grid-template-columns: 30% 40% 30%;
+row-gap: 10px;
+column-gap: 10px;
+padding: 0 60px 0 30px;
+}
+
+.grid > div {
+background-color: thistle;
+padding: 2px;
+}
+
+.footer {
+text-align: center;
+}
+
+.footer > div {
+margin: 10px 500px;
+}
+figure > img {
+width: 800px;
+height: 200px;
+margin-left: 250px;
+}
+.last {
+text-align: center;
+margin-top: 20px;
+margin-bottom: 100px;
+}
+.grid > div > img {
+width: 400px;
+height: 100px;
+}
+</style>
 </head>
-<div id="page-wrapper">
+<body>
+<header>
+<ul class="nav">
+<li><a href="#">Homepage</a></li>
+<li><a href="#">Education</a></li>
+<li><a href="#">Faculties</a></li>
+<li><a href="#">Board of Directors</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</header>
 
-<header id="header">
-  <div class="logo">
-      <img  id="header-img" src="https://assets-global.website-files.com/5bb2cb16977262ab15452eba/5c2c51c24fdbba748cc5f709_Code%20Camp%20logo%20blue.svg" alt="Code Camp Logo"/></div>
-     <nav id="nav-bar">
-     <ul>
-      <li class="nav-link"><a href="#home">Home</a></li>
-      <li class="nav-link"><a href="#Courses">Courses</a></li>
-      <li class="nav-link"><a href="#Material">Material</a></li>
-      <li class="nav-link"><a href="#Contact">Contact</a></li>
-      </ul>
-      </nav>
-    </header>
-  <body>
-    <section id="home">
-    <div class="container"></div>
-    
-    <section id="hero">
-      <h1>Online Coding Courses</h1>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input name="email"
-               id="email"
-               type="email"                                placeholder="Enter your email address" 
-               required/>
-      <input id="submit" type="submit" value="Get Started" class="btn"/>
-      </form>
-    </section>
-    </section>
-    <div class="container">
-      <section id="Courses">
-        <div class="grid">
-          <div class="icon"><i class="fa fa-android"></i></div>
-          <div class="desc">
-            <h2>Android Software Development</h2>
-            <p>Here you'll find a wide range of documentation that teaches you how to build an app, including how to build your first Android app, how to build layouts that adapt to different screens, how to save data in a local database, how to use device sensors and cameras, and much more.</p>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="icon"><i class="fa fa-laptop"></i></div>
-          <div class="desc">
-        <h2>Machine learning</h2>
-            <p>Machine learning is a form of AI that enables a system to learn from data rather than through explicit programming. However, machine learning is not a simple process. As the algorithms ingest training data, it is then possible to produce more precise models based on that data. A machine-learning model is the output generated when you train your machine-learning algorithm with data.</p>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="icon"><i class="fa fa-android"></i></div>
-          <div class="desc">
-            <h2>Front-end developer</h2>
-        <p>Front-end web development, also known as client-side development is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.</p>
-        </div>
-    </div>
-    </section>
-      <section id="Material">
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/hb7Q33ysCwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
-    </div>
- 
-   <div class="container1">
-   <section id="Contact">
-     <h3>Contact us</h3>
-     <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name.."> 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-       </section>
-      </div>
-  <footer>
-     <section id="Contact">
-   <ul>
-      <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </footer>
-   </section>
+<h1>Quantum College of Software Engineering</h1>
+<figure>
+<img src="software.jpg" alt="image of screens"/>
+</figure>
 
-  </body>
+<div class="grid">
+<div>
+<p>Frontend Engineer</p>
+<img src="front-end.jpeg" alt="front end"/>
+A front-end engineer, also known as a front-end web developer or designer, selects,
+installs and tests the user interface elements of a website. The front-end developer
+focuses on the look and feel of the site, along with its functionality.
+</div>
+
+ <div>
+<p>Backend Engineer</p>
+In the context of a software development team, a backend engineer is generally responsible for building the structure of a software application.
+They'll primarily spend time writing business logic, server scripts and APIs that will eventually be utilized by front-end developers and UX designers.
+</div>
+<div>
+<p>Full-Stact Engineer</p>
+A full stack developer is a web developer or engineer who works with both the front and back ends of a website or application—meaning
+they can tackle projects that involve databases, building user-facing websites, or even work with clients during the planning phase of projects.
+<img src="full-stack.png" alt="full-stack"/>
+</div>
+
+ <div>
+<p>Database Engineer</p>
+Database administrators use specialized software to store and organize data. The role may include capacity planning, installation,
+configuration, database design, migration, performance monitoring, security, troubleshooting, as well as backup and data recovery.
+</div>
+
+ <div>
+<p>C++ Developer</p>
+A C++ developer designs and develops software solutions with the programming language of the same name.
+In addition to programming, further development, and optimization, their tasks also include the maintenance of these software systems.
+</div>
+
+ <div>
+<p>Python Developer</p>
+A Python Web Developer is responsible for writing server-side web application logic. Python web developers usually develop back-end components,
+connect the application with the other (often third-party) web services,
+and support the front-end developers by integrating their work with the Python application.
+</div>
+
+</div>
+
+<footer class="footer">
+<div>
+<p>Leave your contact details here.</p>
+<form>
+<label>First name</label>
+<input type="text" placeholder="First name"> <br/>
+<label>Last name</label>
+<input type="text" placeholder="Lastname"><br/>
+<label>Email</label>
+<input type="text" placeholder="Email"><br/>
+<label>Phone number</label>
+<input type="number" placeholder="Phone number">
+
+ <div>
+<input type="radio" id="male" name="gender"><label for="male">Male</label>
+<input type="radio" id="female" name="gender"><label for="female">Female</label>
+</div>
+<input type="submit" name="Submit">
+
+ </form>
+</div>
+<a href="https://www.w3schools.com/">Contact us</a>
+</footer>
+<div class="last">
+<p>For the HTML validation please visit <a href="https://validator.w3.org/">here
+<p>For CSS validation please visit <a href="https://jigsaw.w3.org/css-validator/">here
+<p>For accessibility check out please visit <a href="https://wave.webaim.org/">here
+</div>
+
+
+</body>
 </html>
-    
